@@ -165,6 +165,7 @@ a:hover { color: #fff; }
   background-repeat: no-repeat;
   z-index: -2;
   animation: cv-hero-zoom 32s ease-in-out infinite alternate;
+  filter: brightness(0.5) saturate(1.15) hue-rotate(-8deg);
 }
 
 @keyframes cv-hero-zoom {
@@ -175,8 +176,8 @@ a:hover { color: #fff; }
 .cv-hero-vignette {
   position: absolute; inset: 0;
   background:
-    radial-gradient(ellipse at center, rgba(3, 18, 31, 0) 35%, rgba(3, 18, 31, 0.55) 75%, rgba(3, 18, 31, 0.95) 100%),
-    linear-gradient(180deg, rgba(3, 18, 31, 0.45) 0%, rgba(3, 18, 31, 0) 30%, rgba(3, 18, 31, 0) 70%, rgba(3, 18, 31, 0.85) 100%);
+    radial-gradient(ellipse at center, rgba(3, 18, 31, 0.2) 0%, rgba(3, 18, 31, 0.35) 40%, rgba(3, 18, 31, 0.7) 80%, rgba(3, 18, 31, 0.98) 100%),
+    linear-gradient(180deg, rgba(3, 18, 31, 0.55) 0%, rgba(3, 18, 31, 0.15) 35%, rgba(3, 18, 31, 0.15) 65%, rgba(3, 18, 31, 0.9) 100%);
   z-index: -1;
   pointer-events: none;
 }
