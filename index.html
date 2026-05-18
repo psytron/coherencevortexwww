@@ -14,18 +14,49 @@
     <!-- NOTE: replace https://coherencevortex.com with your real domain once deployed. -->
     <link rel="canonical" href="https://coherencevortex.com/" />
 
-    <!-- Open Graph (Facebook, LinkedIn, iMessage, Discord, Slack, WhatsApp, etc.) -->
+    <!--
+      Open Graph (Facebook, LinkedIn, iMessage, Discord, Slack, WhatsApp, etc.)
+      iMessage rich-link preview slots (top → bottom of the bubble):
+        [ FULL-BLEED IMAGE ]
+        Title  (bold, ~1–2 lines)
+        Subtext  (lighter, ~1–2 lines)
+        domain.com
+    -->
+
+    <!-- iMessage: not displayed. Tells parsers this is a generic webpage. -->
     <meta property="og:type" content="website" />
+
+    <!-- iMessage: not directly visible. Some clients (Facebook/LinkedIn) show this above the title; iMessage shows the domain from og:url instead. -->
     <meta property="og:site_name" content="Coherence Vortex" />
+
+    <!-- iMessage: the domain portion of this URL becomes the tiny gray FOOTER LINK at the bottom of the bubble (e.g. "coherencevortex.com"). -->
     <meta property="og:url" content="https://coherencevortex.com/" />
-    <meta property="og:title" content="Coherence Vortex — Harmonic Field Technology" />
+
+    <!-- iMessage: becomes the bold TITLE line (large text). Falls back to <title> if missing. Truncates around ~70 chars. -->
+    <meta property="og:title" content="Coherence Vortex" />
+
+    <!-- iMessage: becomes the dimmer SUBTEXT line under the title. Truncates around ~150 chars. -->
     <meta property="og:description" content="Harmonic field technology for resonance, coherence, and transformation. Step into the vortex." />
+
+    <!-- iMessage: becomes the large FULL-BLEED IMAGE at the very top of the bubble. Must be an absolute URL. -->
     <meta property="og:image" content="https://coherencevortex.com/images/og-image.jpg" />
+
+    <!-- iMessage: not displayed. HTTPS-explicit copy of og:image — older Facebook/LinkedIn crawlers prefer this when the page is served over HTTPS. -->
     <meta property="og:image:secure_url" content="https://coherencevortex.com/images/og-image.jpg" />
+
+    <!-- iMessage: not displayed. Tells crawlers the image MIME type so they don't have to download to detect it. -->
     <meta property="og:image:type" content="image/jpeg" />
+
+    <!-- iMessage: not displayed. Lets crawlers reserve the correct space for the image before fetching, so the bubble renders without a layout pop. -->
     <meta property="og:image:width" content="1200" />
+
+    <!-- iMessage: not displayed. Pairs with width above; together they confirm the 1.91:1 aspect ratio iMessage expects. -->
     <meta property="og:image:height" content="630" />
+
+    <!-- iMessage: not displayed (visual only). Used by VoiceOver / accessibility tech when someone taps the preview with screen reader on. -->
     <meta property="og:image:alt" content="Coherence Vortex — luminous swirling underwater vortex of light" />
+
+    <!-- iMessage: not displayed. Hint for locale-aware crawlers — affects which language/region variant is shown if you ever localize. -->
     <meta property="og:locale" content="en_US" />
 
     <!-- Twitter / X Card -->
@@ -110,18 +141,21 @@
 
 
 
-    
+
     <!-- ============ SECTION 1 — RESONANCE ============ -->
     <section id="resonance" class="cv-section cv-section-dark">
       <div class="container">
         <div class="row align-items-center g-5">
           <div class="col-lg-6 order-lg-2">
-            <div class="cv-eyebrow"><span>01 — Cellular Modulation</span></div>
-            <h2 class="cv-section-title">Matrix Shaping</h2>
+            <div class="cv-eyebrow"><span>01 — FOUNDATION</span></div>
+            <h2 class="cv-section-title">Mechanotransduction</h2>
             <p class="cv-lead">
-              Emerging research into "sound matrix shaping" is beginning to prove that subcellular organelles, such as mitochondria, act as energy portals that can actually sense and transduce sound vibration and informational biofields, which modulates cellular activity.              
-              Extending this principle from a single cell to an entire ecosystem, vibrates at a signature frequency.
-              Our technology gently entrains these frequencies into a unified harmonic field.
+              For decades, vibrational therapies have faced a fundamental physical limitation: acoustic impedance mismatch.
+              
+              Air has a low acoustic impedance (approx. 413 Rayls at room temperature). Human tissue, being mostly water, has a high acoustic impedance (approx. 1.5 million Rayls). When a sound wave traveling through air strikes the skin, the difference in density causes approximately 99% of the incident energy to be reflected at the air-tissue boundary. Only ~1% transmits into the body. Consequently, most air-based vibrational therapy is lost before it reaches target tissues.
+              
+              Water has an acoustic impedance (approx. 1.48 million Rayls) nearly identical to that of human soft tissue. When a sound wave travels through water and encounters the skin, the impedance mismatch is negligible. Transmission approaches 100%. Energy reflection is virtually eliminated.
+              
             </p>
             <ul class="cv-bullets">
               <li><i class="bi bi-soundwave"></i> Bio-acoustic resonance mapping</li>
@@ -146,9 +180,18 @@
       <div class="container">
         <div class="row align-items-center g-5">
           <div class="col-lg-6">
-            <div class="cv-eyebrow"><span>02 — Field</span></div>
-            <h2 class="cv-section-title">A coherent field, generated.</h2>
+            <div class="cv-eyebrow"><span>02 — Penetration</span></div>
+            <h2 class="cv-section-title">Deep Tissue</h2>
             <p class="cv-lead">
+              Underwater, low-amplitude vibrations reach bone, fascia, and viscera without requiring high-intensity, potentially painful signals.
+              
+              Whole-Body Mechanotransduction: Efficient energy transfer activates cellular mechanoreceptors (*Piezo1/Piezo2* channels) throughout the body simultaneously. This promotes osteoblast activity, suppresses osteoclast differentiation, and modulates neuromuscular pathways.
+              
+              Clinical Correlation: Recent peer-reviewed findings (2025) confirm vibration therapy improves outcomes for osteoporosis, Parkinson's gait disorders, and fibromyalgia. Underwater delivery bypasses the 99% air-tissue loss, making these mechanisms clinically feasible at lower power.              
+              Emerging research into "sound matrix shaping" is beginning to prove that subcellular organelles, such as mitochondria, act as energy portals that can actually sense and transduce sound vibration and informational biofields, which modulates cellular activity.              
+              Extending this principle from a single cell to an entire ecosystem, vibrates at a signature frequency.
+              Our technology gently entrains these frequencies into a unified harmonic field.
+
               Autonomic Regulation: Randomized controlled trials (RCTs) have demonstrated that exposure to low-frequency sound (0–100 Hz) statistically increases parasympathetic nervous system activity, significantly heightening nervous system relaxation and lowering acute stress.              
               The Vortex Engine projects a torus-shaped scalar field that organizes space
               into a state of measurable coherence. Within this field, chaotic information
